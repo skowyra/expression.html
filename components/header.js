@@ -11,7 +11,7 @@ headerTemplate.innerHTML = `
       padding: 1.25rem;
     }
 
-    h1 {
+    .header-1 {
       color: #fff;
       font-size: 2rem;
       font-weight: 200;
@@ -49,7 +49,7 @@ headerTemplate.innerHTML = `
   </style>
   <div>
   <header>
-    <h1>Expressions Greeting Cards</h1>
+    <div class="header-1">Expressions Greeting Cards</div>
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
