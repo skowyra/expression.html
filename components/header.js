@@ -2,15 +2,20 @@ const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
   <style>
+    div {
+      background-color: rgb(0 117 119);
+      font-family: 'Quicksand';
+    }
 
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-  
+    header {
+      padding: 1.25rem;
+    }
+
     h1 {
-        font-family: 'Cormorant Garamond';
-        font-size: 2rem;
-        text-align: center;
-      
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 200;
+      text-align: center;
     }
 
     nav {
@@ -27,7 +32,6 @@ headerTemplate.innerHTML = `
     ul li {
       list-style: none;
       display: inline;
-      font-family: Montserrat;
       font-size: 1rem;
     }
     
@@ -43,6 +47,7 @@ headerTemplate.innerHTML = `
       box-shadow: inset 0 -2px 0 0 #fff;
     }
   </style>
+  <div>
   <header>
     <h1>Expressions Greeting Cards</h1>
     <nav>
@@ -53,9 +58,8 @@ headerTemplate.innerHTML = `
       </ul>
     </nav>
   </header>
+  </div>
 `;
-
-// import stylesheet from "./css/header.css" assert { type: "css" }
 
 class Header extends HTMLElement {
   constructor() {
